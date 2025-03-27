@@ -84,17 +84,17 @@
 
 .hand {
   position: absolute;
-  background: #222;
-  border-radius: 2px;
-  left: 49%;
-  transform-origin: 50% 100%; /* Pöörlemine toimub allservast */
-  transform: translateX(-50%);
+  bottom: 45%;
+  left: 50%;
+  transform-origin: bottom center;
+  background: black;
+  border-radius: 5px;
 }
 
 .hour {
   background-color: white;
   width:8px;
-  height: 80px;  /* Lühendasin natuke */
+  height: 80px;
   bottom: 50%;
   transform: translate(-50%, -100%);
 }
@@ -110,7 +110,7 @@
 .second {
   background-color: red;
   width: 3px;
-  height: 110px;  /* Pikem kui teised */
+  height: 110px;
   bottom: 50%;
   transform: translate(-50%, -100%);
 }
