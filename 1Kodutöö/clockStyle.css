@@ -12,12 +12,38 @@
   font-size: 1.5em;
 }
 
+.dropdownContainer {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#picturesMenu {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  appearance: none; /* Removes default styles */
+  text-align: center;
+}
+
+#picturesMenu:hover {
+  background-color: darkgray;
+}
+
 /* From Uiverse.io by Danishrehman786 */ 
 .realistic-clock {
   position: relative;
   width: 300px;
   height: 300px;
-  margin: 50px auto;
+  margin: 250px auto;
 }
 
 .clock-face {
@@ -97,10 +123,18 @@
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
 }
 
-#changeClockTheme{
+#changeClockTheme {
   position: absolute;
-  margin-top: 200px;
-  align-items: center;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
 }
 #changeClockTheme:hover{
   background-color:red;
@@ -110,7 +144,18 @@
   display: none;
 }
 
-#digitalClock{
+#digitalClock {
+  position:absolute;
+  border:solid black;
+  border-width: 20px;
+  color:white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  background-color: red;
   font-size: 3em;
-
+  text-align: center;
+  background: url('../public/pictures/space_pic.jpg') no-repeat center center fixed;
+  background-size: cover;
 }

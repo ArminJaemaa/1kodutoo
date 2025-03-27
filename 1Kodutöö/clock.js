@@ -3,6 +3,7 @@ const toggleButton = document.getElementById("changeClockTheme");
 const analogClock = document.querySelector(".realistic-clock");
 const digitalClock = document.getElementById("digitalClock");
 const digitalTime = document.getElementById("digitalTime");
+const dropdownMenu = document.getElementById("picturesMenu");
 
 
 function updateClock() {
@@ -38,15 +39,22 @@ setInterval(updateDigitalClock, 1000);
 
 toggleButton.addEventListener("click", () => {
     if (digitalClock.classList.contains("hidden")) {
+        dropdownMenu.classList.remove("hidden");
         digitalClock.classList.remove("hidden");
         analogClock.classList.add("hidden");
         toggleButton.textContent = "Muuda kella";
     } else {
         digitalClock.classList.add("hidden");
+        dropdownMenu.classList.add("hidden");
         analogClock.classList.remove("hidden");
         toggleButton.textContent = "Muuda kella";
     }
 });
+dropdownMenu.addEventListener("click", () => {
+    
+});
+
+
 
 updateClock();
 updateDigitalClock();
