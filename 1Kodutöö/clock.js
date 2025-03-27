@@ -1,4 +1,9 @@
 console.log("Js töötab");
+const toggleButton = document.getElementById("changeClockTheme");
+const analogClock = document.querySelector(".realistic-clock");
+const digitalClock = document.getElementById("digitalClock");
+const digitalTime = document.getElementById("digitalTime");
+
 
 function updateClock() {
     const now = new Date();
@@ -19,6 +24,29 @@ function updateClock() {
     minuteHand.style.transform = `rotate(${minuteDegree}deg)`;
     secondHand.style.transform = `rotate(${secondDegree}deg)`;
 }
+function updateDigitalClock() {
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, "0");
+    const minutes = now.getMinutes().toString().padStart(2, "0");
+    const seconds = now.getSeconds().toString().padStart(2, "0");
+
+    digitalTime.textContent = `${hours}:${minutes}:${seconds}`;
+}
 
 setInterval(updateClock, 1000);
+setInterval(updateDigitalClock, 1000);
+
+toggleButton.addEventListener("click", () => {
+    if (digitalClock.classList.contains("hidden")) {
+        digitalClock.classList.remove("hidden");
+        analogClock.classList.add("hidden");
+        toggleButton.textContent = "Muuda kella";
+    } else {
+        digitalClock.classList.add("hidden");
+        analogClock.classList.remove("hidden");
+        toggleButton.textContent = "Muuda kella";
+    }
+});
+
 updateClock();
+updateDigitalClock();

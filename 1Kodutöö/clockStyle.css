@@ -72,6 +72,7 @@
   bottom: 50%;
   transform: translate(-50%, -100%);
 }
+
 .minute {
   background-color: grey;
   width: 6px;
@@ -79,6 +80,7 @@
   bottom: 50%;
   transform: translate(-50%, -100%);
 }
+
 .second {
   background-color: red;
   width: 3px;
@@ -87,11 +89,28 @@
   transform: translate(-50%, -100%);
 }
 
-
 .number {
   position: absolute;
   font-size: 20px;
   font-weight: bold;
   color: #fff;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+#changeClockTheme{
+  position: absolute;
+  margin-top: 200px;
+  align-items: center;
+}
+#changeClockTheme:hover{
+  background-color:red;
+}
+
+.hidden {
+  display: none;
+}
+
+#digitalClock{
+  font-size: 3em;
+
 }
