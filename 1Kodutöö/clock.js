@@ -1,4 +1,3 @@
-console.log("Js töötab");
 const toggleButton = document.getElementById("changeClockTheme");
 const analogClock = document.querySelector(".realistic-clock");
 const digitalClock = document.getElementById("digitalClock");
@@ -50,11 +49,11 @@ toggleButton.addEventListener("click", () => {
             digitalClock.style.background="url('../Public/Pictures/nature_pic.jpg') no-repeat center center fixed";
             digitalClock.style.backgroundSize = "cover";
         }else if(selectedTheme==="space"){
-            body.style.backgroundColor="rgb(33, 28, 42)";
+            body.style.backgroundColor="#012a3f";
             digitalClock.style.background="url('../Public/Pictures/space_pic.jpg') no-repeat center center fixed";
             digitalClock.style.backgroundSize = "cover";
         }else{
-            body.style.backgroundColor ="rgb(2, 51, 115)";
+            body.style.backgroundColor ="rgb(7, 69, 151)";
             digitalClock.style.background="url('../Public/Pictures/ocean_pic.jpg') no-repeat center center fixed";
             digitalClock.style.backgroundSize = "cover";
         }
@@ -73,11 +72,11 @@ dropdownMenu.addEventListener("change", () => {
         digitalClock.style.background="url('../Public/Pictures/nature_pic.jpg') no-repeat center center fixed";
         digitalClock.style.backgroundSize = "cover";
     }else if(selectedTheme==="space"){
-        body.style.backgroundColor="rgb(33, 28, 42)";
+        body.style.backgroundColor="#012a3f";
         digitalClock.style.background="url('../Public/Pictures/space_pic.jpg') no-repeat center center fixed";
         digitalClock.style.backgroundSize = "cover";
     }else{
-        body.style.backgroundColor ="rgb(2, 51, 115)";
+        body.style.backgroundColor ="rgb(7, 69, 151)";
         digitalClock.style.background="url('../Public/Pictures/ocean_pic.jpg') no-repeat center center fixed";
         digitalClock.style.backgroundSize = "cover";
     }
