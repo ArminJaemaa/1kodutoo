@@ -4,6 +4,7 @@ const analogClock = document.querySelector(".realistic-clock");
 const digitalClock = document.getElementById("digitalClock");
 const digitalTime = document.getElementById("digitalTime");
 const dropdownMenu = document.getElementById("picturesMenu");
+const body = document.body;
 
 
 function updateClock() {
@@ -39,19 +40,47 @@ setInterval(updateDigitalClock, 1000);
 
 toggleButton.addEventListener("click", () => {
     if (digitalClock.classList.contains("hidden")) {
+        const selectedTheme = dropdownMenu.value;
         dropdownMenu.classList.remove("hidden");
         digitalClock.classList.remove("hidden");
         analogClock.classList.add("hidden");
         toggleButton.textContent = "Muuda kella";
+        if (selectedTheme === "nature") {
+            body.style.backgroundColor ="rgb(48, 105, 50)";
+            digitalClock.style.background="url('../Public/Pictures/nature_pic.jpg') no-repeat center center fixed";
+            digitalClock.style.backgroundSize = "cover";
+        }else if(selectedTheme==="space"){
+            body.style.backgroundColor="rgb(33, 28, 42)";
+            digitalClock.style.background="url('../Public/Pictures/space_pic.jpg') no-repeat center center fixed";
+            digitalClock.style.backgroundSize = "cover";
+        }else{
+            body.style.backgroundColor ="rgb(2, 51, 115)";
+            digitalClock.style.background="url('../Public/Pictures/ocean_pic.jpg') no-repeat center center fixed";
+            digitalClock.style.backgroundSize = "cover";
+        }
     } else {
         digitalClock.classList.add("hidden");
         dropdownMenu.classList.add("hidden");
         analogClock.classList.remove("hidden");
+        body.style.backgroundColor = "aliceblue";
         toggleButton.textContent = "Muuda kella";
     }
 });
-dropdownMenu.addEventListener("click", () => {
-    
+dropdownMenu.addEventListener("change", () => {
+    const selectedTheme = dropdownMenu.value;
+    if (selectedTheme === "nature") {
+        body.style.backgroundColor ="rgb(48, 105, 50)";
+        digitalClock.style.background="url('../Public/Pictures/nature_pic.jpg') no-repeat center center fixed";
+        digitalClock.style.backgroundSize = "cover";
+    }else if(selectedTheme==="space"){
+        body.style.backgroundColor="rgb(33, 28, 42)";
+        digitalClock.style.background="url('../Public/Pictures/space_pic.jpg') no-repeat center center fixed";
+        digitalClock.style.backgroundSize = "cover";
+    }else{
+        body.style.backgroundColor ="rgb(2, 51, 115)";
+        digitalClock.style.background="url('../Public/Pictures/ocean_pic.jpg') no-repeat center center fixed";
+        digitalClock.style.backgroundSize = "cover";
+    }
 });
 
 

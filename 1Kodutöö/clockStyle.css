@@ -1,3 +1,7 @@
+body{
+  background-color: aliceblue;
+}
+
 #name {
   position: absolute;
   top: 10px;
@@ -115,13 +119,26 @@
   transform: translate(-50%, -100%);
 }
 
+.clock-numbers {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 .number {
   position: absolute;
   font-size: 20px;
   font-weight: bold;
+  text-align: center;
   color: #fff;
+  transform: translate(-50%, -50%);
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
 }
+
+.number-12 { top: 0%; left: 50%; }
+.number-3 { top: 44%; right: 2%; }
+.number-6 { top: 88%; left: 50%; }
+.number-9 { top: 44%; left: 4%; }
 
 #changeClockTheme {
   position: absolute;
@@ -147,7 +164,9 @@
 #digitalClock {
   position:absolute;
   border:solid black;
-  border-width: 20px;
+  border-width: 25px;
+  overflow: hidden;
+  border-radius: 20%;
   color:white;
   left: 50%;
   top: 50%;
@@ -156,6 +175,4 @@
   background-color: red;
   font-size: 3em;
   text-align: center;
-  background: url('../public/pictures/space_pic.jpg') no-repeat center center fixed;
-  background-size: cover;
 }
