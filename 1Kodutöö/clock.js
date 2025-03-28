@@ -95,6 +95,14 @@ dropdownMenu.addEventListener("change", () => {
         digitalClock.style.backgroundSize = "cover";
     }
 });
+digitalClock.addEventListener("click", () => {
+    if (digitalClock.style.fontSize ==="5em"){
+        digitalClock.style.removeProperty("font-size")
+    }else{
+        digitalClock.style.fontSize ="5em"
+    }
+    }
+)
 
 
 getDate();

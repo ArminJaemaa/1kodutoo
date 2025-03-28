@@ -179,7 +179,11 @@ body{
   top: 50%;
   transform: translate(-50%, -50%);
   width: 50%;
-  background-color: red;
   font-size: 3em;
   text-align: center;
+  transition: font-size 0.4s ease-in-out;
+}
+
+#digitalClock:hover{
+  font-size: 5em;
 }
