@@ -9,6 +9,13 @@ body{
   font-size: 1.5em;
 }
 
+#dateContainer{
+  position: flex;
+  margin-left: 5px;
+  margin-top: 40px;
+  font-size: 1.5em;
+}
+
 #repo {
   position: absolute;
   top: 10px;
@@ -34,7 +41,7 @@ body{
   color: white;
   border: none;
   border-radius: 5px;
-  appearance: none; /* Removes default styles */
+  appearance: none;
   text-align: center;
 }
 

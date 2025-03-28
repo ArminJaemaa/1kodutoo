@@ -3,7 +3,9 @@ const analogClock = document.querySelector(".realistic-clock");
 const digitalClock = document.getElementById("digitalClock");
 const digitalTime = document.getElementById("digitalTime");
 const dropdownMenu = document.getElementById("picturesMenu");
+const datecontainer = document.getElementById("dateContainer");
 const body = document.body;
+const months = ["Jaanuar", "Veebruar", "Märts", "Aprill", "Mai","Juuni", "Juuli", "August", "September","Oktoober","November"]
 
 
 function updateClock() {
@@ -32,6 +34,18 @@ function updateDigitalClock() {
     const seconds = now.getSeconds().toString().padStart(2, "0");
 
     digitalTime.textContent = `${hours}:${minutes}:${seconds}`;
+}
+function getDate(){
+    date = new Date();
+    const day = date.getDate().toString();
+    const month = date.getMonth().toString();
+    const year = date.getFullYear().toString();
+    if (day < 0) {
+        day = "0" + day ;
+    }
+
+    datecontainer.textContent = `${day} ${months[month]} ${year}`;
+
 }
 
 setInterval(updateClock, 1000);
@@ -83,6 +97,6 @@ dropdownMenu.addEventListener("change", () => {
 });
 
 
-
+getDate();
 updateClock();
 updateDigitalClock();
