@@ -1,10 +1,11 @@
 # 1-kodutoo
 Autor: Armin Jaemaa.
-Funktsionaalsus: On võimalik kella vahetada aaloog kella pealt digitaalse. Digitaalsel kellal on 3 teemat mille vahel saab valida, vastavalt muutub ka taustavärv ja kella pilt. Digitaalse kella peale vajutades on võimalik parema nähtavuse eesmärgil seda suuremaks teha ja uuesti peale vajutades tagasi väikseks.
+Funktsionaalsus: On võimalik kella vahetada aaloog kella pealt digitaalse. Digitaalsel kellal on 3 teemat mille vahel saab valida, vastavalt muutub ka taustavärv ja kella pilt. Kui digitaalse kella peale vajutades on võimalik parema nähtavuse eesmärgil seda suuremaks teha ja uuesti peale vajutades tagasi väikseks.
 <img width="1536" alt="Screenshot 2025-03-31 at 17 31 10" src="https://github.com/user-attachments/assets/7e6d2300-a341-4498-a761-58d29b451285" />
 <img width="1536" alt="Screenshot 2025-03-31 at 17 31 17" src="https://github.com/user-attachments/assets/e30b3583-a5f3-4c10-9820-81885f8930b4" />
 <img width="1536" alt="Screenshot 2025-03-31 at 17 31 23" src="https://github.com/user-attachments/assets/c985aa54-864a-4339-ad28-b47172fbc718" />
 <img width="1536" alt="Screenshot 2025-03-31 at 17 31 33" src="https://github.com/user-attachments/assets/d13b2d91-ca83-44af-91e1-6b792ab1ed8e" />
+<img width="1380" alt="Screenshot 2025-03-31 at 17 37 19" src="https://github.com/user-attachments/assets/84719635-4200-4479-abaa-f5c287f364d5" />
 
 
 # 1-kodutoo
