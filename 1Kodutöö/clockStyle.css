@@ -1,4 +1,4 @@
-body{
+body {
   background-color: aliceblue;
   width: 100%;
 }
@@ -10,7 +10,7 @@ body{
   font-size: 1.5em;
 }
 
-#dateContainer{
+#dateContainer {
   position: flex;
   margin-left: 5px;
   margin-top: 40px;
@@ -26,7 +26,7 @@ body{
 
 .dropdownContainer {
   position: absolute;
-  top: 90px;
+  top: 10%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -50,7 +50,7 @@ body{
   background-color: darkgray;
 }
 
-/* From Uiverse.io by Danishrehman786 */ 
+/* From Uiverse.io by Danishrehman786 */
 .realistic-clock {
   position: relative;
   width: 300px;
@@ -65,8 +65,7 @@ body{
   background: radial-gradient(circle, #333, #111);
   border-radius: 50%;
   border: 10px solid #cec5c5;
-  box-shadow:
-    0 0 30px rgba(0, 0, 0, 0.5),
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5),
     inset 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
@@ -105,7 +104,7 @@ body{
 
 .hour {
   background-color: white;
-  width:8px;
+  width: 8px;
   height: 80px;
   bottom: 50%;
   transform: translate(-50%, -100%);
@@ -143,11 +142,23 @@ body{
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
 }
 
-.number-12 { top: 0%; left: 50%; }
-.number-3 { top: 44%; right: 2%; }
-.number-6 { top: 88%; left: 50%; }
-.number-9 { top: 44%; left: 4%; }
-
+.number-12 {
+  top: 0%;
+  left: 50%;
+}
+.number-3 {
+  top: 44%;
+  right: 2%;
+}
+.number-6 {
+  top: 88%;
+  left: 50%;
+}
+.number-9 {
+  top: 44%;
+  left: 4%;
+}
+/*------------------------------*/
 #changeClockTheme {
   position: absolute;
   top: 20px;
@@ -161,8 +172,8 @@ body{
   border: none;
   border-radius: 5px;
 }
-#changeClockTheme:hover{
-  background-color:red;
+#changeClockTheme:hover {
+  background-color: red;
 }
 
 .hidden {
@@ -170,12 +181,12 @@ body{
 }
 
 #digitalClock {
-  position:absolute;
-  border:solid black;
+  position: absolute;
+  border: solid black;
   border-width: 25px;
   overflow: hidden;
   border-radius: 20%;
-  color:white;
+  color: white;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -185,6 +196,6 @@ body{
   transition: font-size 0.4s ease-in-out;
 }
 
-#digitalClock:hover{
+#digitalClock:hover {
   font-size: 5em;
 }

@@ -4,6 +4,7 @@ const digitalClock = document.getElementById("digitalClock");
 const digitalTime = document.getElementById("digitalTime");
 const dropdownMenu = document.getElementById("picturesMenu");
 const datecontainer = document.getElementById("dateContainer");
+const nameContainer = document.getElementById("name");
 const body = document.body;
 const months = [
   "Jaanuar",
@@ -57,14 +58,14 @@ function updateDigitalClock() {
 }
 function getDate() {
   date = new Date();
-  const day = date.getDate().toString();
-  const weekday = date.getDay().toString();
-  const month = date.getMonth().toString();
-  const year = date.getFullYear().toString();
-  if (day < 0) {
+  const day = date.getDate();
+  const weekday = date.getDay();
+  const month = date.getMonth();
+  const year = date.getFullYear();
+  if (day < 10) {
     day = "0" + day;
   }
-
+  console.log(month, weekday)
   datecontainer.textContent = `${weekdays[weekday]}, ${day} ${months[month]} ${year}`;
 }
 
@@ -83,16 +84,22 @@ toggleButton.addEventListener("click", () => {
       digitalClock.style.background =
         "url('../Public/Pictures/nature_pic.jpg') no-repeat center center fixed";
       digitalClock.style.backgroundSize = "cover";
+     nameContainer.style.removeProperty("color");
+      datecontainer.style.removeProperty("color");
     } else if (selectedTheme === "space") {
       body.style.backgroundColor = "#012a3f";
       digitalClock.style.background =
         "url('../Public/Pictures/space_pic.jpg') no-repeat center center fixed";
       digitalClock.style.backgroundSize = "cover";
+     nameContainer.style.color = "white";
+      datecontainer.style.color = "white";
     } else {
-      body.style.backgroundColor = "rgb(7, 69, 151)";
+      body.style.backgroundColor = "#206F7D";
       digitalClock.style.background =
         "url('../Public/Pictures/ocean_pic.jpg') no-repeat center center fixed";
       digitalClock.style.backgroundSize = "cover";
+     nameContainer.style.removeProperty("color");
+      datecontainer.style.removeProperty("color");
     }
   } else {
     digitalClock.classList.add("hidden");
@@ -100,6 +107,8 @@ toggleButton.addEventListener("click", () => {
     analogClock.classList.remove("hidden");
     body.style.backgroundColor = "aliceblue";
     toggleButton.textContent = "Muuda kella";
+    datecontainer.style.removeProperty("color");
+   nameContainer.style.removeProperty("color");
   }
 });
 dropdownMenu.addEventListener("change", () => {
@@ -109,16 +118,22 @@ dropdownMenu.addEventListener("change", () => {
     digitalClock.style.background =
       "url('../Public/Pictures/nature_pic.jpg') no-repeat center center fixed";
     digitalClock.style.backgroundSize = "cover";
+   nameContainer.style.removeProperty("color");
+    datecontainer.style.removeProperty("color");
   } else if (selectedTheme === "space") {
     body.style.backgroundColor = "#012a3f";
     digitalClock.style.background =
       "url('../Public/Pictures/space_pic.jpg') no-repeat center center fixed";
     digitalClock.style.backgroundSize = "cover";
+   nameContainer.style.color = "white";
+    datecontainer.style.color = "white";
   } else {
-    body.style.backgroundColor = "rgb(7, 69, 151)";
+    body.style.backgroundColor = "#206F7D";
     digitalClock.style.background =
       "url('../Public/Pictures/ocean_pic.jpg') no-repeat center center fixed";
     digitalClock.style.backgroundSize = "cover";
+   nameContainer.style.removeProperty("color");
+    datecontainer.style.removeProperty("color");
   }
 });
 digitalClock.addEventListener("click", () => {
