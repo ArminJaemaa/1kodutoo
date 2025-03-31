@@ -82,21 +82,21 @@ toggleButton.addEventListener("click", () => {
     if (selectedTheme === "nature") {
       body.style.backgroundColor = "rgb(48, 105, 50)";
       digitalClock.style.background =
-        "url('../Public/Pictures/nature_pic.jpg') no-repeat center center fixed";
+        "url('./Public/Pictures/nature_pic.jpg') no-repeat center center fixed";
       digitalClock.style.backgroundSize = "cover";
      nameContainer.style.removeProperty("color");
       datecontainer.style.removeProperty("color");
     } else if (selectedTheme === "space") {
       body.style.backgroundColor = "#012a3f";
       digitalClock.style.background =
-        "url('../Public/Pictures/space_pic.jpg') no-repeat center center fixed";
+        "url('./Public/Pictures/space_pic.jpg') no-repeat center center fixed";
       digitalClock.style.backgroundSize = "cover";
      nameContainer.style.color = "white";
       datecontainer.style.color = "white";
     } else {
       body.style.backgroundColor = "#206F7D";
       digitalClock.style.background =
-        "url('../Public/Pictures/ocean_pic.jpg') no-repeat center center fixed";
+        "url('./Public/Pictures/ocean_pic.jpg') no-repeat center center fixed";
       digitalClock.style.backgroundSize = "cover";
      nameContainer.style.removeProperty("color");
       datecontainer.style.removeProperty("color");
@@ -116,21 +116,21 @@ dropdownMenu.addEventListener("change", () => {
   if (selectedTheme === "nature") {
     body.style.backgroundColor = "rgb(48, 105, 50)";
     digitalClock.style.background =
-      "url('../Public/Pictures/nature_pic.jpg') no-repeat center center fixed";
+      "url('./Public/Pictures/nature_pic.jpg') no-repeat center center fixed";
     digitalClock.style.backgroundSize = "cover";
    nameContainer.style.removeProperty("color");
     datecontainer.style.removeProperty("color");
   } else if (selectedTheme === "space") {
     body.style.backgroundColor = "#012a3f";
     digitalClock.style.background =
-      "url('../Public/Pictures/space_pic.jpg') no-repeat center center fixed";
+      "url('./Public/Pictures/space_pic.jpg') no-repeat center center fixed";
     digitalClock.style.backgroundSize = "cover";
    nameContainer.style.color = "white";
     datecontainer.style.color = "white";
   } else {
     body.style.backgroundColor = "#206F7D";
     digitalClock.style.background =
-      "url('../Public/Pictures/ocean_pic.jpg') no-repeat center center fixed";
+      "url('./Public/Pictures/ocean_pic.jpg') no-repeat center center fixed";
     digitalClock.style.backgroundSize = "cover";
    nameContainer.style.removeProperty("color");
     datecontainer.style.removeProperty("color");
