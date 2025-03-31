@@ -21,7 +21,7 @@ const months = [
 ];
 const weekdays = [
   "Pühapäev",
-  "Esmapäev",
+  "Esmaspäev",
   "Teisipäev",
   "Kolmapäev",
   "Neljapäev",

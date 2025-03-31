@@ -1,5 +1,6 @@
 # 1-kodutoo
-
+Autor: Armin Jaemaa
+Funktsionaalsus: On võimalik kella vahetada aaloog kella pealt digitaalse. Digitaalsel kellal on 3 teemat mille vahel saab valida, vastavalt muutub ka taustavärv ja kella pilt. Digitaalse kella peale vajutades on võimalik parema nähtavuse eesmärgil seda suuremaks teha ja uuesti peale vajutades tagasi väikseks.
 # 1-kodutoo
 
 ## Tähtaeg 01.04.2025 23:59
